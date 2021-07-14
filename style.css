@@ -215,7 +215,7 @@ section{
     }
     .container{
         width:411px;
-        height: 700px;
+        height: 750px;
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
