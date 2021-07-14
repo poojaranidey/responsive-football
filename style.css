@@ -1,0 +1,349 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* header nav style  */
+.nav{
+    display:flex;
+    background-color: #2D25A0;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;          
+}
+.nav a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F3F1FF;
+    padding-right: 35px;
+}
+
+/* common style utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.section-title{
+    color: white;
+    font-size: 60px;
+    margin-bottom:27px;
+}
+h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+h3{
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+/* top page style  */
+section{
+    display: flex;
+}
+.container{
+    background-color: #2D25A0;
+    height: 677px;
+    transition: transform 0.2s ease-in-out 0.1s;   
+}
+.container:hover img{
+    transform: scale(1.2);
+}
+.half-width{
+    width: 50%;
+    padding-top: 8%;
+    padding-left: 10%;
+}
+.half-width img{
+    width: 520px;
+    height: 438px;
+}
+.top-section{
+    width: 485px;
+    height: 230px;  
+    padding-left: 10%;
+    padding-top: 10%;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-weight: 700;
+}
+.top-section .button:hover{
+    background-color: mintcream;
+    color: crimson;
+}
+
+/* player details styles  */
+
+.players-section{
+    padding-top: 70px;
+    padding-left:220px;
+    background-color: #FFFFFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin:0;
+}
+.player-details{
+    padding: 16px 15px 15px 15px;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    padding:15px 15px 0 15px;
+}
+.player-details h3{
+    margin: 0;   
+}
+
+/* highlights styles */
+.Highlights-section{
+    display: flex;
+    align-items: center;
+}
+.highlights{
+    width: 469px;
+    height: 309px;
+    padding-left: 182px ;
+}
+.highlights h2{
+    font-size:40px;
+    font-weight: 700;
+
+}
+.highlights img{
+    width: 567px;
+    height: 427px;
+}
+
+/* Join club section style  */
+
+.join-club-title{
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+.join-club {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    background-color:#2D25A0;
+    background-size: cover;
+    height: 230px;
+    padding: 0 50px;
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.join-club-button{
+    padding: 20px 40px;
+    background: linear-gradient(60deg, rgb(220, 20, 60), blue) ;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19.2px;
+}
+
+/* footer section  */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+.footer-logo{
+    width: 483.87px;
+    height: 110px;
+}
+.contact-icons{
+    color: #969BAB;
+  
+}
+.contact-icons i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    nav{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    main{
+        width: 411px;
+    }
+    body{
+        width: 406px;
+    }
+  .top-section{
+      width: auto;
+      height: auto;
+    }
+    .container:hover img{
+         transform: scale(1.15);
+    }
+    .container{
+        width:411px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        transition: transform 1s ease-out 0.2s;
+    }
+    .section-title{
+        font-size: 50px;
+    }
+    .half-width img{
+        width: 329px;
+        height: 258px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;  
+    }
+    .players-section{
+        width: 330px;
+        height: 4458px;
+        padding:10px 30px;
+        margin-left: 10px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Highlights-section{
+        margin-top: 1550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlights{
+        padding-left: 15px;
+        width: 329px;
+        height: 299px;
+    }
+    .Highlights-section img{
+        margin-top: 118px;
+        margin-left: -74px;
+    }
+    .join-club {
+        margin-top: 50px;
+        padding:10px;
+    }
+    .footer-logo {
+        width: 273.87px;
+        height: 110px;
+    }
+}
+/* media queries */
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+
+    nav{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    main{
+        width: 411px;
+    }
+    body{
+        width:770px;
+    }
+    .top-section{
+        width: auto;
+        height: auto;
+    }
+    .container:hover img{
+        transform: scale(1.15);
+    }
+    .container{
+        width:770px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        transition: transform 1s ease-out 0.2s;
+    }
+    .section-title{
+        font-size: 50px;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+    }
+    .half-width{
+        width: 50%;
+    }
+    .half-width img{
+        width: 508px;
+        height: 414px;
+        padding-right: 30px;  
+    }
+    .players-section{
+        width: 330px;
+        padding:10px 30px;
+        margin-left: 10px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+ 
+    }
+    .Highlights-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlights{
+        padding-left: 170px;
+        width: 470px;
+        height: 299px;
+    }
+    .Highlights-section img{
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .join-club {
+        width: 600px;
+        margin-top: 50px;
+        padding:10px;
+        margin-left: 80px;
+    }
+    .footer-logo {
+        width: 300px;
+        height: 110px;
+    }
+
+}
